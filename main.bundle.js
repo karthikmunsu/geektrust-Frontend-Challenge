@@ -322,7 +322,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n <div style=\"position: absolute;\n    text-align: center;\n    bottom: 0;\n    right: 0;\n    left: 0;margin-bottom: 10px;\" >\n\n       Coding problem - www.geektrust.in/finding-falcone\n\n    </div>\n\n"
+module.exports = "\n <div style=\"position: absolute;\n    text-align: center;\n    bottom: 0;\n    right: 0;\n    left: 0;margin-bottom: 10px;\" >\n\n       Coding problem - www.geektrust.in/finding-falcone\n\n    </div>\n\n\n   \n\n"
 
 /***/ }),
 
@@ -371,7 +371,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Ma
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/indigo-pink.css"), "");
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  font-family: Roboto, sans-serif;\n}\n\nmat-card {\n  max-width: 80%;\n  margin: 2em auto;\n  text-align: center;\n}\n\nmat-toolbar-row {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.done {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  color: white;\n}\n\n.title-center {\n  margin: 0 auto;\nfont-style: bold;\nfont-size: 35px;\n}\n\n.footer-txt {\nmargin: 0 auto;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  font-family: Roboto, sans-serif;\n}\n\nmat-card {\n  max-width: 80%;\n  margin: 2em auto;\n  text-align: center;\n}\n\nmat-toolbar-row {\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n\n.done {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  color: white;\n}\n\n.title-center {\n  margin: 0 auto;\nfont-style: bold;\nfont-size: 35px;\n}\n\n.footer-txt {\nmargin: 0 auto;\n}\n\n\n.spacer {\n    -webkit-box-flex: 1;\n    -ms-flex: 1 1 auto;\n    flex: 1 1 auto;\n}\n", ""]);
 
 // exports
 
@@ -384,7 +384,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar color=\"primary\">\n    <span class=\"title-center\">Finding Falcone!</span>\n<span (click)=\"reset()\">Reset &nbsp;</span> |\n    <span [routerLink]=\"['/']\">&nbsp;Home </span>\n<!--    <button mat-icon-button [mat-menu-trigger-for]=\"menu\">\n      <mat-icon>more_vert</mat-icon>\n    </button>-->\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar color=\"primary\">\n    <h1 class=\"title-center\">Finding Falcone!</h1>\n<span class=\"spacer\"></span>\n\n    <button mat-icon-button [mat-menu-trigger-for]=\"menu\">\n      <mat-icon>more_vert</mat-icon>\n    </button>\n<mat-menu #menu=\"matMenu\">\n      <button mat-menu-item (click)=\"reset()\">\n        <mat-icon>refresh</mat-icon>\n        <span>Reset</span>\n      </button>\n      <button mat-menu-item [routerLink]=\"['/']\">\n        <mat-icon>home</mat-icon>\n        <span>Home</span>\n      </button>\n    </mat-menu>\n</mat-toolbar>\n\n\n"
 
 /***/ }),
 
@@ -445,7 +445,7 @@ exports.push([module.i, "@import url(https://fonts.googleapis.com/icon?family=Ma
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/indigo-pink.css"), "");
 
 // module
-exports.push([module.i, "/**@import '~https://code.getmdl.io/1.3.0/material.light_blue-amber.min.css';**/\n\n/**body {\n  margin: 0;\n  font-family: Roboto, sans-serif;\n}\n\nmat-card {\n  max-width: 80%;\n  margin: 2em auto;\n  text-align: center;\n}\n\nmat-toolbar-row {\n  justify-content: space-between;\n}\n\n.done {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  color: white;\n}**/\n\n\n.subtitle-center {\n  margin: 0 auto;\nfont-style: bold;\nfont-size: 25px;\n}\n\n.time-taken {\nmargin-left: 65px;\nfont-size:20px;\n}\n\n.select-class {\nmargin-left:15px;\n}\n\n\n.example-radio-group {\n  display: -webkit-inline-box;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n}\n\n.example-radio-button {\n  margin: 5px;\n}\n\n.example-selected-value {\n  margin: 15px 0;\n}\n\n\nmat-grid-tile {\n  background: white;\n}\n\n\n\n.loading-indicator {\n  position: fixed;\n  z-index: 999;\n  height: 2em;\n  width: 2em;\n  overflow: show;\n  margin: auto;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n}\n\n/* Transparent Overlay */\n.loading-indicator:before {\n  content: '';\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0,0,0,0.3);\n}\n\n\n", ""]);
+exports.push([module.i, "/**@import '~https://code.getmdl.io/1.3.0/material.light_blue-amber.min.css';**/\n\n/**body {\n  margin: 0;\n  font-family: Roboto, sans-serif;\n}\n\nmat-card {\n  max-width: 80%;\n  margin: 2em auto;\n  text-align: center;\n}\n\nmat-toolbar-row {\n  justify-content: space-between;\n}\n\n.done {\n  position: fixed;\n  bottom: 20px;\n  right: 20px;\n  color: white;\n}\n\n\n.subtitle-center {\n  margin: 0 auto;\nfont-style: bold;\nfont-size: 25px;\n}\n\n.time-taken {\nmargin-left: 65px;\nfont-size:20px;\n}\n\n.select-class {\nmargin-left:15px;\n}\n\n\n.example-radio-group {\n  display: inline-flex;\n  flex-direction: column;\n}\n\n.example-radio-button {\n  margin: 5px;\n}\n\n.example-selected-value {\n  margin: 15px 0;\n}\n**/\n\nmat-grid-tile {\n  background: white;\n}\n\n\n\n.loading-indicator {\n  position: fixed;\n  z-index: 999;\n  height: 2em;\n  width: 2em;\n  overflow: show;\n  margin: auto;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  right: 0;\n}\n\n/* Transparent Overlay */\n.loading-indicator:before {\n  content: '';\n  display: block;\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(0,0,0,0.3);\n}\n\n\n", ""]);
 
 // exports
 
@@ -458,7 +458,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/homepage/homepage.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n  <mat-card>\n<mat-card-subtitle align=\"center\"><span class=\"subtitle-center\">Select planets you want to search in:</span></mat-card-subtitle>\n\n<mat-card>\n\n\n\n\n<mat-grid-list cols=\"5\" rowHeight=\"2:1\">\n  <mat-grid-tile>\n\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 1\" ngModel required name=\"orbit1\" #orbit1=\"ngModel\" (ngModelChange)=\"updateDestinationTwo($event)\">\n<!-- <mat-option value=\"0\">Select</mat-option> -->\n<mat-option *ngFor=\"let planet of _planets\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n</mat-form-field>\n\n</mat-grid-tile>\n  <mat-grid-tile>\n\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 2\" ngModel required name=\"orbit2\" #orbit2=\"ngModel\" [disabled]=\"second_option\" (ngModelChange)=\"updateDestinationThree($event)\">\n<!-- <mat-option value=\"0\">Select</mat-option> -->\n<mat-option *ngFor=\"let planet of _planets2\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 3\" ngModel required name=\"orbit3\" #orbit3=\"ngModel\" [disabled]=\"third_option\" (ngModelChange)=\"updateDestinationFour($event)\">\n<!-- <mat-option value=\"0\">Select</mat-option> -->\n<mat-option *ngFor=\"let planet of _planets3\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 4\" ngModel required name=\"orbit4\" #orbit4=\"ngModel\" [disabled]=\"fourth_option\">\n<!-- <mat-option value=\"0\">Select</mat-option> -->\n<mat-option *ngFor=\"let planet of _planets4\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n</mat-grid-tile>\n  <mat-grid-tile>TimeTaken: {{_timeTaken}}</mat-grid-tile>\n</mat-grid-list>\n\n\n<mat-grid-list cols=\"5\" rowHeight=\"2:1\" *ngIf=\"orbit1.valid || orbit2.valid || orbit3.valid || orbit4.valid\">\n<mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit1.valid\"  required [(ngModel)]=\"firstOption\" (ngModelChange)=\"updateRemainingUnits($event); second_option=false;updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\" >\n  <mat-radio-button class=\"example-radio-button\"  *ngFor=\"let vehicle of _vehicles\" name=\"vehicle.name\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit1.value)\"  >{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button>\n</mat-radio-group>\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit2.valid\" required [(ngModel)]=\"secondOption\" (ngModelChange)=\"updateRemainingUnits($event); third_option=false; updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit2.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button>\n</mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit3.valid\" required [(ngModel)]=\"thirdOption\" (ngModelChange)=\"updateRemainingUnits($event); fourth_option=false;updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit3.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button></mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit4.valid\" required [(ngModel)]=\"fourthOption\" (ngModelChange)=\"updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit4.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button></mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n\n\n</mat-grid-tile>\n\n</mat-grid-list>\n\n\n\n\n\n\n<mat-grid-list cols=\"1\" rowHeight=\"6:1\">\n  <mat-grid-tile>\n\n    <button mat-raised-button color=\"primary\" (click)=\"findFalcone(firstOption,secondOption,thirdOption,fourthOption,orbit1.value,orbit2.value,orbit3.value,orbit4 .value)\" [disabled]=\"(!orbit1.valid) || (!orbit2.valid) || (!orbit3.valid) || (!orbit4.valid)\">Find Falcone!</button>\n\n</mat-grid-tile>\n</mat-grid-list>\n\n</mat-card>\n\n\n\n\n\n\n</mat-card>\n\n<div class=\"loading-indicator\" *ngIf=\"showSpinner\">\n  <mat-progress-spinner mode=\"indeterminate\" color=\"accent\"></mat-progress-spinner>\n</div>\n\n"
+module.exports = "\n  <mat-card>\n<mat-card-subtitle align=\"center\"><span class=\"subtitle-center\">Select planets you want to search in:</span></mat-card-subtitle>\n\n<mat-card>\n\n\n\n\n<mat-grid-list cols=\"5\" rowHeight=\"2:1\" >\n  <mat-grid-tile>\n\n<mat-form-field>\n\n<mat-select placeholder=\"Destination 1\" ngModel required name=\"orbit1\" #orbit1=\"ngModel\" (ngModelChange)=\"updateDestinationTwo($event)\">\n\n<mat-option *ngFor=\"let planet of _planets\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n</mat-form-field>\n\n</mat-grid-tile>\n  <mat-grid-tile>\n\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 2\" ngModel required name=\"orbit2\" #orbit2=\"ngModel\" [disabled]=\"second_option\" (ngModelChange)=\"updateDestinationThree($event)\">\n\n<mat-option *ngFor=\"let planet of _planets2\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 3\" ngModel required name=\"orbit3\" #orbit3=\"ngModel\" [disabled]=\"third_option\" (ngModelChange)=\"updateDestinationFour($event)\">\n\n<mat-option *ngFor=\"let planet of _planets3\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-form-field >\n\n<mat-select placeholder=\"Destination 4\" ngModel required name=\"orbit4\" #orbit4=\"ngModel\" [disabled]=\"fourth_option\">\n\n<mat-option *ngFor=\"let planet of _planets4\" [value]=\"planet.name\">{{planet.name}}</mat-option>\n</mat-select>\n\n</mat-form-field>\n</mat-grid-tile>\n  <mat-grid-tile>TimeTaken: {{_timeTaken}}</mat-grid-tile>\n</mat-grid-list>\n\n\n<mat-grid-list cols=\"5\" rowHeight=\"2:1\" *ngIf=\"orbit1.valid || orbit2.valid || orbit3.valid || orbit4.valid\">\n<mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit1.valid\"  required [(ngModel)]=\"firstOption\" (ngModelChange)=\"updateRemainingUnits($event); second_option=false;updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\" >\n  <mat-radio-button class=\"example-radio-button\"  *ngFor=\"let vehicle of _vehicles\" name=\"vehicle.name\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit1.value)\"  >{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button>\n</mat-radio-group>\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit2.valid\" required [(ngModel)]=\"secondOption\" (ngModelChange)=\"updateRemainingUnits($event); third_option=false; updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit2.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button>\n</mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit3.valid\" required [(ngModel)]=\"thirdOption\" (ngModelChange)=\"updateRemainingUnits($event); fourth_option=false;updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit3.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button></mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n<mat-radio-group class=\"example-radio-group\"  *ngIf=\"orbit4.valid\" required [(ngModel)]=\"fourthOption\" (ngModelChange)=\"updateTime(firstOption, secondOption, thirdOption, fourthOption, orbit1.value, orbit2.value, orbit3.value, orbit4.value)\">\n  <mat-radio-button class=\"example-radio-button\" *ngFor=\"let vehicle of _vehicles\" [(value)]=\"vehicle.name\"  [disabled]=\"canReach(vehicle.max_distance, orbit4.value)\">{{vehicle.name}} ({{vehicle.total_no}})</mat-radio-button></mat-radio-group>\n\n</mat-grid-tile>\n\n  <mat-grid-tile>\n\n\n</mat-grid-tile>\n\n</mat-grid-list>\n\n\n\n\n\n\n<mat-grid-list cols=\"1\" rowHeight=\"6:1\">\n  <mat-grid-tile>\n\n    <button mat-raised-button color=\"primary\" (click)=\"findFalcone(firstOption,secondOption,thirdOption,fourthOption,orbit1.value,orbit2.value,orbit3.value,orbit4 .value)\" [disabled]=\"(!orbit1.valid) || (!orbit2.valid) || (!orbit3.valid) || (!orbit4.valid)\">Find Falcone!</button>\n\n</mat-grid-tile>\n</mat-grid-list>\n\n</mat-card>\n\n\n\n\n\n\n</mat-card>\n\n<div class=\"loading-indicator\" *ngIf=\"showSpinner\">\n  <mat-progress-spinner mode=\"indeterminate\" color=\"accent\"></mat-progress-spinner>\n</div>\n\n\n\n\n"
 
 /***/ }),
 
@@ -488,8 +488,8 @@ var HomepageComponent = (function () {
         this.homeService = homeService;
         this.router = router;
         this._timeTaken = 0;
+        this.oldTime = 0;
         this._vehicles = [];
-        this._token = '';
         this._planets = [];
         this._planets2 = [];
         this._planets3 = [];
@@ -497,108 +497,90 @@ var HomepageComponent = (function () {
         this.second_option = true;
         this.third_option = true;
         this.fourth_option = true;
-        this.oldValue = '';
-        this.oldTime = 0;
         this.showSpinner = false;
+        this.oldValue = '';
+        this._token = '';
     }
     HomepageComponent.prototype.ngOnInit = function () {
-        //console.log(this._ships);
+        //api call for getting planets.
         this.planets();
+        //api call for getting space ships.
         this.vehicles();
+        //api call for getting token.
         this.token();
     };
     HomepageComponent.prototype.planets = function () {
         var _this = this;
+        //api call for getting the planets.
         this.homeService.getPlanets().subscribe(function (res) {
-            console.log(res);
             _this._planets = res;
-            //}
         }, function (err) {
-            console.log(err);
-            //this.errors = "signup error occurs";
         });
     };
     HomepageComponent.prototype.vehicles = function () {
         var _this = this;
+        //api call for getting the space ships.
         this.homeService.getVehicles().subscribe(function (res) {
-            console.log(res);
             _this._vehicles = res;
         }, function (err) {
-            console.log(err);
-            //this.errors = "signup error occurs";
         });
     };
     HomepageComponent.prototype.token = function () {
+        // handing the session data for token.
         var sessionData = sessionStorage.getItem("token");
-        if (sessionData !== null) {
+        if (sessionData !== null && sessionData.length !== 0) {
             var data = JSON.parse(sessionData);
             this._token = data.token;
-            console.log(this._token);
         }
         else {
             this.homeService.getToken().subscribe(function (res) {
-                console.log(res);
                 sessionStorage.setItem("token", JSON.stringify(res));
             }, function (err) {
-                console.log(err);
-                //this.errors = "signup error occurs";
             });
         }
     };
     HomepageComponent.prototype.findFalcone = function (firstOption, secondOption, thirdOption, fourthOption, orbit1, orbit2, orbit3, orbit4) {
         var _this = this;
-        this.showSpinner = true;
+        this.showSpinner = true; // for displaying spinner
         var planet_names = []; // declaring the planets array
+        var vehicle_names = []; //declaring the vehicle_names array for space ships
+        //creating a planet_names array for body of the request
         planet_names.push(orbit1);
         planet_names.push(orbit2);
         planet_names.push(orbit3);
         planet_names.push(orbit4);
-        console.log(planet_names);
-        var vehicle_names = []; //declaring the vehicle_names array for space ships
+        //creating a vehicle_names array for body of the request
         vehicle_names.push(firstOption);
         vehicle_names.push(secondOption);
         vehicle_names.push(thirdOption);
         vehicle_names.push(fourthOption);
-        console.log(vehicle_names);
         //api call
         this.homeService.getResult(this._token, planet_names, vehicle_names).subscribe(function (res) {
-            console.log(res);
+            // *if the status is false.
             if (res.status == 'false') {
                 _this.router.navigate(['/failure']);
             }
             else if (res.status == 'success') {
                 _this.router.navigate(['/success', { place: res.planet_name, time: _this._timeTaken }]);
             }
-            else {
-                sessionStorage.empty();
-                _this.token();
-                _this.homeService.getResult(_this._token, planet_names, vehicle_names).subscribe(function (res) {
-                    if (res.status == 'failure') {
-                        _this.router.navigate(['/failure']);
-                    }
-                    else if (res.status == 'success') {
-                        _this.router.navigate(['/success', { place: res.planet_name, time: _this._timeTaken }]);
-                    }
-                }, function (err) {
-                    console.log(err);
-                });
-            }
             _this._token = res;
             _this.showSpinner = false;
         }, function (err) {
-            console.log(err);
-            //this.errors = "signup error occurs";
+            //*if the token is expired remove the token from the sessionStorage and recursive call.
+            sessionStorage.removeItem("token");
+            _this.token(); //getting the new token after clearing the session Storage.
+            _this.findFalcone(firstOption, secondOption, thirdOption, fourthOption, orbit1, orbit2, orbit3, orbit4);
         });
     };
     HomepageComponent.prototype.updateTime = function () {
+        // this function can take n number of arguments as of now i used 8 arguments.
         this._timeTaken = 0;
         for (var i = 0; i < 4; i++) {
-            console.log(arguments[i]);
             for (var j in this._vehicles) {
                 if (this._vehicles[j].name === arguments[i]) {
                     for (var k in this._planets) {
                         if (this._planets[k].name == arguments[i + 4]) {
-                            this._timeTaken += (this._planets[k].distance / this._vehicles[j].speed);
+                            this._timeTaken += (this._planets[k].distance / this._vehicles[j].speed); // calculating the time taken.
                         }
                     }
                 }
@@ -626,6 +608,7 @@ var HomepageComponent = (function () {
         }
     };
     HomepageComponent.prototype.updateDestinationTwo = function (val) {
+        //update the planet2 destination array
         this._planets2 = [];
         for (var i in this._planets) {
             if (this._planets[i].name !== val) {
@@ -634,6 +617,7 @@ var HomepageComponent = (function () {
         }
     };
     HomepageComponent.prototype.updateDestinationThree = function (val) {
+        //update the planet2 destination array
         this._planets3 = [];
         for (var i in this._planets2) {
             if (this._planets2[i].name !== val) {
@@ -642,6 +626,7 @@ var HomepageComponent = (function () {
         }
     };
     HomepageComponent.prototype.updateDestinationFour = function (val) {
+        //update the planet2 destination array
         this._planets4 = [];
         for (var i in this._planets3) {
             if (this._planets3[i].name !== val) {
@@ -650,14 +635,12 @@ var HomepageComponent = (function () {
         }
     };
     HomepageComponent.prototype.canReach = function (maxDistance, name) {
+        //show or hide the spaceships based up on the max distance it can cover.
         for (var i in this._planets) {
             if (this._planets[i].name == name) {
                 return (maxDistance < this._planets[i].distance);
             }
         }
-    };
-    HomepageComponent.prototype.reset = function () {
-        console.log('rest fired');
     };
     HomepageComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
